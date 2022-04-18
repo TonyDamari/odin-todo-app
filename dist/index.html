@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ToDo</title>
+</head>
+<body>
+    <body>
+        <h1 class="title">Things To Do</h1>
+        <div class="container">
+            
+            <div class="top-bar">
+                <div class="input">
+                    <label >Show list</label>
+                    <select id="list-display">
+                        <option value="all">All</option>
+                        <option value="critical">Critical</option>
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                        <option value="none">None</option>
+                       
+                    </select>
+                </div>
+    
+                <button id="add">+</button>
+               
+            </div>
+
+            <div class="main-bar">
+                <div class="modal">
+                    <form>
+                        <div class="input">
+                            <label>Task Name</label>
+                            <input type="text" id="task-name">
+                        </div>
+                        <div class="input">
+                            <label>Priority</label>
+                            <select name="" id="priority">
+                                <option value="critical">Critical</option>
+                                <option value="high">High</option>
+                                <option value="medium">Medium</option>
+                                <option value="low">Low</option>
+                            </select>
+                        </div>
+                        <div class="input">
+                            <label>Due Date</label>
+                            <input type="date" id="due-date">
+                        </div>
+                        <div class="input">
+                            <label>Project</label>
+                            <input type="type" id="project-option">
+                        </div>
+                        <div class="input">
+                            <label>Description</label>
+                            <textarea id="description"></textarea>
+                        </div>
+                        <button id="new-task">Add Task</button>
+                    </form>
+                    <button id="close">X</button>
+                </div>
+                <div id="list" class="testing"></div>
+            </div>
+        </div>
+        <script src="bundle.js"></script>
+    </div>
+</body>
+</html>

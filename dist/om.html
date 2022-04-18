@@ -1,0 +1,61 @@
+<body>
+    <h1 class="title">List Title</h1>
+    <div class="container">
+        <div class="side-bar">
+            <!-- <h2>Projects</h2> -->
+            <div class="inputs">
+                <label >New Project</label>
+                <input type="text" id="add-project" placeholder="Add A Project">
+                <button id="add-project-btn">+</button>
+            </div>
+        </div>
+        <div class="top-bar">
+            <div class="input">
+                <label >Show list</label>
+                <select id="list-display">
+                    <option value="all">All</option>
+                    <option value="all">Critical</option>
+                    <option value="all">High</option>
+                    <option value="all">Medium</option>
+                    <option value="all">Low</option>
+                </select>
+            </div>
+
+            <button id="add">+</button>
+           
+        </div>
+        <div class="main-bar">
+            <div class="modal">
+                <form>
+                    <div class="input">
+                        <label>Task Name</label>
+                        <input type="text" id="task-name">
+                    </div>
+                    <div class="input">
+                        <label>Priority</label>
+                        <select name="" id="priority">
+                            <option value="critical">Critical</option>
+                            <option value="high">High</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label>Due Date</label>
+                        <input type="date" id="due-date">
+                    </div>
+                    <div class="input">
+                        <label>Project</label>
+                        <input type="type" id="project-option">
+                    </div>
+                    <div class="input">
+                        <label>Description</label>
+                        <textarea id="description"></textarea>
+                    </div>
+                    <button id="new-task">Add Task</button>
+                </form>
+                <button id="close">X</button>
+            </div>
+            <div id="list"></div>
+        </div>
+    </div>

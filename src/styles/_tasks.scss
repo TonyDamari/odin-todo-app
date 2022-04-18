@@ -1,0 +1,26 @@
+
+.task{
+    background: rgba(14, 148, 201, 0.6);
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+      
+}
+
+.critical{
+    background: red;
+}
+
+.high{
+    background: orange;
+}
+
+.medium{
+    background: yellow;
+    color: #111;
+}
+
+.low{
+    background: green;
+}
